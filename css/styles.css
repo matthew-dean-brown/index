@@ -1,0 +1,113 @@
+/* comment */
+/* These are called element selectors */
+table,
+th,
+td {
+    border: burlywood solid 2px;
+    margin: auto;
+}
+
+/* These are descendant selectors */
+header h2 {
+    color: peru;
+}
+
+/* These are also descendant selectors */
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1rem;
+}
+
+/* This is a class selector */
+.nav {
+    background-color: black;
+    text-align: center;
+}
+
+/* This is an ID selector */
+#main {
+    margin: 30px;
+    text-align: center;
+}
+
+/* This is a child selector, styles all children elements */
+aside>p {
+    border: 10px dimgrey dotted;
+}
+
+/* Adjacent Sibling selector */
+aside+button {
+    color: cornflowerblue;
+}
+
+/* General sibling selector */
+p~article {
+    background-color: coral;
+}
+
+/* universal selector */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+
+}
+
+/* Pseudo selector */
+/* Pseudo class_____one colon*/
+h3 {
+    display: none;
+    background-color: yellow;
+    padding: 2rex;
+}
+
+/* activates code when hovered upon */
+#hover:hover h3 {
+    display: block;
+}
+
+/* Changes color of text when pressing on it */
+a:active {
+    color: rgb(238, 0, 255);
+}
+
+/* styles all elements that are children of tr */
+tr:first-child {
+    background-color: yellowgreen;
+}
+
+/* styles first td element in every tr element */
+tr td:first-child:hover {
+    color: crimson
+}
+
+/* styles first i element in every p element*/
+p i:first-child {
+    color: blue;
+}
+
+/* styles all i elements in p element */
+p:first-child i {
+    color: peru
+}
+
+/* Pseudo elements___two colons */
+p::selection {
+    color: greenyellow;
+}
+
+.paragraph::first-line {
+    color: red;
+}
+
+.paragraph::first-letter {
+    color: blue;
+}
+
+article::after {
+    content: url('https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif');
+}
+
+article::before {
+    content: url('https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif');
+}
